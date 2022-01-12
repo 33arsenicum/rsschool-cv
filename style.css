@@ -66,6 +66,7 @@ html {
 
 .section {
   width: 50%;
+  padding: 15px;
 }
 
 @media (max-width: 768px) {
@@ -75,6 +76,7 @@ html {
 }
 
 .section-title {
+ 
   font-weight: bold;
   color: #2e2e2e;
 }
@@ -86,3 +88,9 @@ html {
   align-content: center;
   text-align: center; 
 }
+
+.profilephoto {
+  margin-top: 15px;
+  border-radius: 15%;
+  box-shadow: 0 2px 5px #939393;
+  }
