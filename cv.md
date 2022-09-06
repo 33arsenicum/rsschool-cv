@@ -1,2 +1,2 @@
 # Dzianis Radvilovich
-## E-mail ## cmykbielaruski@gmail.com
+## E-mail: cmykbielaruski@gmail.com
