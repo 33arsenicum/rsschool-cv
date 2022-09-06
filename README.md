@@ -1,1 +1,1 @@
-https://33arsenicum.github.io/rsschool-cv/
+https://33arsenicum.github.io/rsschool-cv/rsschool-cv-html/
