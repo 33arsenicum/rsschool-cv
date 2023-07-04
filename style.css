@@ -107,7 +107,7 @@ ul {
 }
 
 a {
-    color: #000;
+    color: #939393;
     text-decoration: none;
     -moz-transition: all .3s ease-out;
     -o-transition: all .3s ease-out;
@@ -153,8 +153,29 @@ a:hover {
     .profilephoto {
         width: 150px;
     }
+
+    .main-container {
+        padding: 20px;
+    }
+
+    .section {
+        margin-bottom: 20px;
+    }
+
+    ul,
+    p {
+        margin: 5px 0 18px;
+    }
+}
+.fa-check-circle {
+    font-size: 10px;
 }
 
+ul li div {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
 footer .main-container {
     background-color: transparent;
     padding: 0;
