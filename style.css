@@ -5,10 +5,10 @@ body {
     min-height: 100vh;
     margin: 0;
     padding: 0;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 18px;
     font-weight: 300;
-    background-color: #e6e6e6;
+    background-color: #939393;
 }
 
 .container {
@@ -21,76 +21,226 @@ body {
 }
 
 .header {
-    background-color: #939393;
+    background-color: #1c2a34;
     width: 100%;
 }
 
 .footer {
-    background-color: #939393;
+    background-color: #1c2a34;
     width: 100%;
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
 }
 
 .nav-list {
     display: flex;
-    align-items: center;
-    justify-content: center;
     list-style: none;
-    font-size: 20px;
-    font-weight: bold;
+    padding: 0;
 }
 
-html {
-    scroll-behavior: smooth;
+.section-item:not(:last-child) {
+    margin-right: 20px;
 }
+
 
 .nav-link {
-    padding: 0 20px;
-    line-height: 50px;
-    transition: .3s;
-}
-
-.section-item a {
-    color: #fefffe;
+    color: #fff;
     text-decoration: none;
-    transition: color 0.5s;
+    text-transform: uppercase;
+    font-size: 23px;
+    font-weight: 700;
+    -moz-transition: all .3s ease-out;
+    -o-transition: all .3s ease-out;
+    transition: all .3s ease-out;
 }
 
-.section-item a:hover {
-    color: #000000;
+.nav-link:hover {
+    color: #c2cbd2;
+}
+
+.main {
+    flex-grow: 1;
+    padding: 40px 0;
 }
 
 .main-container {
-    display: flex;
-    flex-wrap: wrap;
+    background-color: #e6e6e6;
+    padding: 40px;
+    border-radius: 30px;
+}
+
+.profilephoto {
+    width: 250px;
+    border-radius: 20px;
+}
+
+h1 {
+    margin-top: 0;
+    margin-bottom: 20px;
 }
 
 .section {
-    width: 50%;
-    padding: 15px;
-}
-
-@media (max-width: 768px) {
-    .section {
-        width: 100%;
-    }
+    margin-bottom: 40px;
 }
 
 .section-title {
+    color: #000000;
+    margin-bottom: 10px;
+    margin-top: 0;
+    font-weight: 900;
+    font-size: 32px;
+}
 
-    font-weight: bold;
-    color: #2e2e2e;
+section ul,
+section p {
+    font-weight: 500;
+    font-size: 18px;
+    color: #000;
+}
+
+ul {
+    padding-left: 0;
+    list-style: none;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+    -moz-transition: all .3s ease-out;
+    -o-transition: all .3s ease-out;
+    transition: all .3s ease-out;
+}
+
+a:hover {
+    color: #434d54;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+    color: #fff;
+    font-size: 14px;
+}
+
+.footer a {
+    color: #fff;
+}
+
+.footer img {
+    width: 100px;
 }
 
 .position {
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    align-content: center;
+    align-items: center;
     text-align: center;
 }
 
-.profilephoto {
-    margin-top: 15px;
-    border-radius: 15%;
-    box-shadow: 0 2px 5px #939393;
+@media (max-width: 767px) {
+    .nav {
+        flex-wrap: wrap;
+    }
+
+    .section-title {
+        font-size: 22px;
+    }
+
+    .profilephoto {
+        width: 150px;
+    }
+}
+
+footer .main-container {
+    background-color: transparent;
+    padding: 0;
+}
+
+footer .section:first-child {
+    margin-bottom: 20px;
+    font-size: 20px;
+    line-height: 24px;
+    color: #fff;
+    font-weight: 700;
+    -moz-transition: all .3s ease-out;
+    -o-transition: all .3s ease-out;
+    transition: all .3s ease-out;
+}
+
+footer .section:first-child a:hover {
+    color: #c2cbd2;
+}
+
+footer .section:last-child {
+    margin-bottom: 0;
+}
+
+footer .section:last-child a svg {
+    fill: #fff;
+    -moz-transition: all .3s ease-out;
+    -o-transition: all .3s ease-out;
+    transition: all .3s ease-out;
+}
+
+footer .section:last-child a:hover svg {
+    fill: #c2cbd2;
+}
+
+.nav-toggle {
+    display: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+h3.section-title {
+    font-size: 28px;
+}
+
+@media (max-width: 767px) {
+    .nav-list {
+        display: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .nav-list.active {
+        display: flex;
+        flex-direction: column;
+        background-color: #1c2a34;
+        position: absolute;
+        padding: 20px;
+        width: 100%;
+        gap: 20px;
+        top: 2px;
+    }
+
+    .nav-item {
+        margin-bottom: 20px;
+    }
+
+    .nav-link {
+        color: #fff;
+        text-decoration: none;
+        -moz-transition: all .3s ease-out;
+        -o-transition: all .3s ease-out;
+        transition: all .3s ease-out;
+        font-size: 18px;
+    }
+
+    .nav-link:hover {
+        color: #c2cbd2;
+    }
+
+    .nav-toggle {
+        display: block;
+        margin-left: auto;
+        padding-right: 20px;
+        z-index: 5;
+    }
 }
