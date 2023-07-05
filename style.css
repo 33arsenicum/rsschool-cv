@@ -225,7 +225,7 @@ h3.section-title {
     font-size: 28px;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 967px) {
     .nav-list {
         display: none;
         padding: 0;
