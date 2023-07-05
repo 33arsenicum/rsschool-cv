@@ -1,0 +1,269 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    background-color: #939393;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.header {
+    background-color: #1c2a34;
+    width: 100%;
+}
+
+.footer {
+    background-color: #1c2a34;
+    width: 100%;
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+.section-item:not(:last-child) {
+    margin-right: 20px;
+}
+
+
+.nav-link {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 23px;
+    font-weight: 700;
+    -moz-transition: all .3s ease-out;
+    -o-transition: all .3s ease-out;
+    transition: all .3s ease-out;
+}
+
+.nav-link:hover {
+    color: #c2cbd2;
+}
+
+.main {
+    flex-grow: 1;
+    padding: 40px 0;
+}
+
+.main-container {
+    background-color: #f6f6f6;
+    padding: 40px;
+    border-radius: 30px;
+}
+
+.profilephoto {
+    width: 250px;
+    border-radius: 20px;
+}
+
+h1 {
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.section {
+    margin-bottom: 40px;
+}
+
+.section-title {
+    color: #000000;
+    margin-bottom: 10px;
+    margin-top: 0;
+    font-weight: 900;
+    font-size: 32px;
+}
+
+section ul,
+section p {
+    font-weight: 500;
+    font-size: 18px;
+    color: #000;
+}
+
+ul {
+    padding-left: 0;
+    list-style: none;
+}
+
+a {
+    color: #939393;
+    font-size: 20px;
+    font-weight: 700;
+    text-decoration: none;
+    -moz-transition: all .3s ease-out;
+    -o-transition: all .3s ease-out;
+    transition: all .3s ease-out;
+}
+
+a:hover {
+    color: #434d54;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+    color: #fff;
+    font-size: 14px;
+}
+
+.footer a {
+    color: #fff;
+}
+
+.footer img {
+    width: 100px;
+}
+
+.position {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+@media (max-width: 767px) {
+    .nav {
+        flex-wrap: wrap;
+    }
+
+    .section-title {
+        font-size: 22px;
+    }
+
+    .profilephoto {
+        width: 150px;
+    }
+
+    .main-container {
+        padding: 20px;
+    }
+
+    .section {
+        margin-bottom: 20px;
+    }
+
+    ul,
+    p {
+        margin: 5px 0 18px;
+    }
+}
+.fa-circle {
+    font-size: 12px;
+}
+
+ul li div,
+#skills ul li {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+footer .main-container {
+    background-color: transparent;
+    padding: 0;
+}
+
+footer .section:first-child {
+    margin-bottom: 20px;
+    font-size: 20px;
+    line-height: 24px;
+    color: #fff;
+    font-weight: 700;
+    -moz-transition: all .3s ease-out;
+    -o-transition: all .3s ease-out;
+    transition: all .3s ease-out;
+}
+
+footer .section:first-child a:hover {
+    color: #c2cbd2;
+}
+
+footer .section:last-child {
+    margin-bottom: 0;
+}
+
+footer .section:last-child a svg {
+    fill: #fff;
+    -moz-transition: all .3s ease-out;
+    -o-transition: all .3s ease-out;
+    transition: all .3s ease-out;
+}
+
+footer .section:last-child a:hover svg {
+    fill: #c2cbd2;
+}
+
+.nav-toggle {
+    display: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+h3.section-title {
+    font-size: 28px;
+}
+
+@media (max-width: 967px) {
+    .nav-list {
+        display: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .nav-list.active {
+        display: flex;
+        flex-direction: column;
+        background-color: #1c2a34;
+        position: absolute;
+        padding: 20px;
+        width: 100%;
+        gap: 20px;
+        top: 2px;
+    }
+
+    .nav-item {
+        margin-bottom: 20px;
+    }
+
+    .nav-link {
+        color: #fff;
+        text-decoration: none;
+        -moz-transition: all .3s ease-out;
+        -o-transition: all .3s ease-out;
+        transition: all .3s ease-out;
+        font-size: 18px;
+    }
+
+    .nav-link:hover {
+        color: #c2cbd2;
+    }
+
+    .nav-toggle {
+        display: block;
+        margin-left: auto;
+        padding-right: 20px;
+        z-index: 5;
+    }
+}
