@@ -67,7 +67,7 @@ body {
 }
 
 .main-container {
-    background-color: #e6e6e6;
+    background-color: #f6f6f6;
     padding: 40px;
     border-radius: 30px;
 }
@@ -169,11 +169,12 @@ a:hover {
         margin: 5px 0 18px;
     }
 }
-.fa-check-circle {
-    font-size: 10px;
+.fa-circle {
+    font-size: 12px;
 }
 
-ul li div {
+ul li div,
+#skills ul li {
     display: flex;
     align-items: center;
     gap: 5px;
